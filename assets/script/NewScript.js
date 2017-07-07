@@ -14,7 +14,6 @@ cc.Class({
     },
     
     onLoad: function () {
-        console.log('--wtf?');
         var self = this;
         cc.loader.loadRes("img/defaultHead",cc.SpriteFrame,function (err, val) {
             // self.node.getComponent(cc.Sprite).spriteFrame = val;
