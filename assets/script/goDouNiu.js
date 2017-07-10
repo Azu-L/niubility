@@ -16,7 +16,7 @@ cc.Class({
     
     totoScene: function(){
         console.log('-----');
-        cc.director.loadScene("gameScene")
+        cc.director.loadScene("dnScene")
     },
 
     // use this for initialization
