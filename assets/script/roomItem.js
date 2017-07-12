@@ -15,11 +15,16 @@ cc.Class({
             type:cc.SpriteFrame
         }
     },
+    
+    
+    init:function(val){
+        console.log('simida = '+val);
+         this.roomName.string = val;
+    },
 
     // use this for initialization
     onLoad: function () {
-        this.roomName.string = '斗牛房间';
-        
+     
         this.roomIcon.spriteFrame = this.roomIcons[parseInt(4*Math.random())];
     },
 

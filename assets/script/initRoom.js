@@ -14,6 +14,7 @@ cc.Class({
         var self = this;
         for(let i=0; i<10; i++){
             let item = cc.instantiate(this.itemPrefab);
+            item.getComponent('roomItem').init('房间'+i);
             self.node.addChild(item);
         }
     },

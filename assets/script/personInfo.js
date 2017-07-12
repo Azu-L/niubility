@@ -26,6 +26,10 @@ cc.Class({
             self.personName.string = '康桑思密达';
         });
     },
+    
+    onEnable:function(){
+        console.log('show hide!');
+    }
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
