@@ -17,6 +17,18 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         console.log(this.node);
+        var node = this.node;
+        // 创建一个移动动作
+        // var action = cc.moveTo(10, 100, 200);
+        // 执行动作
+        // node.runAction(action);
+        // var ACTION_TAG = 1;
+        // action.setTag(ACTION_TAG);
+        
+        // 让节点左右来回移动
+        var seq = cc.sequence(cc.moveBy(0.5, 200, 0), cc.moveBy(0.5, -200, 0));
+        node.runAction(seq);
+        
     },
 
     // called every frame, uncomment this function to activate update callback
