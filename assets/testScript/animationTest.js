@@ -15,14 +15,14 @@ cc.Class({
     },
     
     testFun:function(val){
-        console.log('val = '+val);
+        // console.log('val = '+val);
     },
 
     // use this for initialization
     onLoad: function () {
         var anim = this.getComponent(cc.Animation);
         anim.play();
-        console.log(anim);
+        // console.log(anim);
     },
 
     // called every frame, uncomment this function to activate update callback
